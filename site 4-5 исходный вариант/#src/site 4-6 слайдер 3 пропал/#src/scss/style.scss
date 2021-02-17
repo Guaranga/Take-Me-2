@@ -1,0 +1,298 @@
+//<МИКСИНЫ>===============================================================================================
+
+//</МИКСИНЫ>===============================================================================================
+
+//<ШРИФТЫ>===============================================================================================
+
+//<Подключаем шрифты>=======================================================================================
+//&display=swap&subset=cyrillic-ext
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
+
+//</Подключаем шрифты>=======================================================================================
+
+//<Иконочные шрифты>==========================================================================================
+//@import "icons";
+//</Иконочные шрифты>==========================================================================================
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontFamily: "Roboto, Kaushan+Script";
+//</Шрифт по умолчанию>==========================================================================================
+
+//</ШРИФТЫ>=======================================================================================================
+
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+
+$minWidth: 320px;
+$maxWidth: 1400px;
+$maxWidthContainer: 1170;
+$md1: $maxWidthContainer + 12;
+$md1-2: 1130;
+$md2: 1027.98;
+$md3: 970;
+$md3-4: 730;
+$md4: 479.98;
+//</ПЕРЕМЕННЫЕ>===========================================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+body {
+	font-size: 20px;
+	line-height: 150%;
+	background-color: rgb(236, 236, 236);
+	font-family: Roboto, sans-serif;
+	color: black;
+	height: 5000px;
+
+	@media (max-width: $md3+px) {
+		/*&.lock {
+			overflow: hidden;
+		}*/
+	}
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "null";
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	&._loaded {
+	}
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+._container {
+	//не работает для хдера - возможно нужна ссылка или отдельный файл импорт
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	@media (max-width: $md2+px) {
+		padding: 0 20px;
+	}
+	@media (max-width: $md3+px) {
+		padding: 0 10px;
+	}
+}
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+@import "ui";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+@import "header";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+
+.main-slider {
+	margin-top: 115px;
+	// .main-slider__body
+	@media (max-width: $md3 + px) {
+		margin-top: 50px;
+		overflow: auto;
+		height: 100%;
+	}
+
+	&__background-block {
+		display: none;
+		position: absolute;
+		top: 500;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 30;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		z-index: 5;
+
+		@media (max-width: $md3 + px) {
+			margin-top: 0px;
+		}
+
+		// .main-slider__1
+
+		&__1 {
+		}
+
+		// .main-slider__content
+
+		&__content {
+		}
+
+		// .main-slider__2
+
+		&__2 {
+		}
+	}
+	// .main-slider__form
+	&__form {
+		display: flex;
+		padding: 72px 0 0 0;
+
+		@media (max-width: $md3-4 + px) {
+			flex-direction: column;
+			align-items: center;
+			align-self: center;
+		}
+
+		input {
+			width: 272px;
+			height: 50px;
+			border-radius: 4px;
+			border: 2px solid #f5f5f5;
+			background-color: #ffffff;
+			margin: 0 0 0 30px;
+			z-index: 5;
+			font-size: 16px;
+			font-weight: 400;
+			text-align: left;
+
+			@media (max-width: $md2 + px) {
+				width: 170px;
+			}
+			@media (max-width: $md3-4 + px) {
+				margin: 0 0 20px 30px;
+				border-radius: 10%;
+			}
+			&::placeholder {
+				color: #b7b7b7;
+				@media (max-width: $md3-4 + px) {
+					text-align: center;
+					border-radius: 10%;
+				}
+			}
+			&:first-child {
+				width: 270px;
+
+				@media (max-width: $md2 + px) {
+					width: 170px;
+				}
+				@media (max-width: $md3-4 + px) {
+					margin: 0 0 20px 30px;
+					border-radius: 10%;
+				}
+			}
+			&:last-child {
+				width: 172px;
+				height: 50px;
+				border-radius: 6px;
+				background-color: #3ec6ff;
+				text-align: center;
+				color: #ffffff;
+				font-size: 16px;
+				font-weight: 400;
+
+				@media (max-width: $md1-2 + px) {
+					width: 70px;
+				}
+				@media (max-width: $md3-4 + px) {
+					margin: 0 0 20px 30px;
+					width: 80px;
+					border-radius: 50%;
+				}
+			}
+		}
+		select {
+			width: 272px;
+			height: 50px;
+			border-radius: 4px;
+			border: 2px solid #f5f5f5;
+			background-color: #ffffff;
+			color: #b7b7b7;
+			font-weight: 400;
+			font-size: 15px;
+			text-align: left;
+			margin: 0 0 0 30px;
+
+			@media (max-width: $md3 + px) {
+				width: 170px;
+			}
+			@media (max-width: $md3-4 + px) {
+				text-align: center;
+				margin: 0 0 20px 30px;
+				border-radius: 10%;
+			}
+		}
+	}
+}
+.middle {
+}
+/*
+.slids {
+	display: flex;
+	flex-direction: row;
+	margin-left: -180px;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	left: 180px;
+}*/
+.main-slider {
+	// ._container
+
+	&_container {
+	}
+}
+
+//фото слайдер главная
+/*
+.main-slider.conteiner.main-slider__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: left;
+	flex-wrap: nowrap;
+	padding: 0 0 0 50px;
+	position: relative;
+	z-index: 5;
+	color: rgb(109, 23, 23);
+}
+*/
+.main-slider__1 {
+	align-items: center;
+	background-image: url(../img/main-slider/1.jpg);
+	width: 100%;
+	height: 685px;
+	background-position: center;
+	background-size: cover;
+	z-index: 20;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	@media (max-width: $md3 + px) {
+		overflow: scroll;
+		height: auto;
+	}
+}
+
+.main-slider__2 {
+	align-items: center;
+	background-image: url(../img/main-slider/2.jpg);
+	height: 685px;
+	background-position: center;
+	background-size: cover;
+	z-index: 3;
+	position: relative;
+	width: 100%;
+}
+
+// класс для JS включает нажатие по кнопке 1 раз
+.slide1 {
+	background-image: url(../img/main-slider/1.jpg);
+}
+
+//end-фото слайдер главная ==========================================================
