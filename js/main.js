@@ -19,15 +19,25 @@ $(document).ready(function () {
 
 });
 
-//клик по кнопке слайдера
+//клик по кнопке mine-slider
 $(document).ready(function () {
-
 
 	setTimeout(function () {
 		$('#r41').delay(2000).fadeTo(800, 0.2);
 		$('#r41').fadeTo(500, 1.0);
 		$('#r41').trigger('click');
 	}, 6000);
+
+});
+
+//Подключаю третий слайдер slider-2
+$(document).ready(function () {
+	$('.slider-2').slick(
+		{
+			arrows: true,
+		}
+	);
+
 
 
 });
