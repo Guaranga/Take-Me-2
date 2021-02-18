@@ -1,0 +1,118 @@
+.header {
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  position: fixed; }
+  .header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 115px; }
+    @media (max-width: 970px) {
+      .header__body {
+        height: 50px; } }
+  .header__burger {
+    display: none; }
+    @media (max-width: 970px) {
+      .header__burger {
+        display: block;
+        position: absolute;
+        right: 0;
+        z-index: 3;
+        width: 30px;
+        height: 20px;
+        cursor: pointer; }
+        .header__burger span {
+          position: absolute;
+          top: 9px;
+          right: 10px;
+          width: 100%;
+          height: 2px;
+          content: "";
+          transition: all 0.4s ease 0;
+          background-color: #3ec6ff; }
+          .header__burger span:first-child {
+            top: 0px;
+            transition: all 0.4s ease 0s; }
+          .header__burger span:last-child {
+            top: auto;
+            bottom: 0px;
+            transition: all 0.4s ease 0s; }
+        .header__burger.active span {
+          transform: scale(0);
+          background-color: black; }
+          .header__burger.active span:first-child {
+            transform: rotate(-45deg);
+            top: 9px; }
+          .header__burger.active span:last-child {
+            transform: rotate(45deg);
+            bottom: 9px; } }
+  .header__logo {
+    position: relative;
+    left: 50px;
+    z-index: 3;
+    color: #3ec6ff;
+    font-family: "Kaushan Script";
+    font-size: 25px; }
+    @media (max-width: 970px) {
+      .header__logo {
+        position: absolute;
+        left: 50px; } }
+  @media (max-width: 970px) {
+    .header__menu {
+      position: fixed;
+      top: -150%;
+      left: 0;
+      width: 100%;
+      height: 265px;
+      background-color: rgba(58, 58, 58, 0.925);
+      padding: 70px 0 20px 0;
+      transition: all 0.4s ease 0s;
+      overflow: auto; }
+      .header__menu.active {
+        top: 0; } }
+
+.header:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; }
+
+.menu__list {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  right: 70px; }
+  @media (max-width: 970px) {
+    .menu__list {
+      display: block;
+      right: 0; } }
+  .menu__list li {
+    margin: 0 0 0 40px; }
+    @media (max-width: 1027.98px) {
+      .menu__list li {
+        margin: 0 0 0 15px; } }
+    @media (max-width: 970px) {
+      .menu__list li {
+        margin: 0 0 10px 0;
+        text-align: center;
+        padding-right: 15%; } }
+    @media (max-width: 970px) {
+      .menu__list li a {
+        text-transform: uppercase;
+        color: #3ec6ff;
+        font-weight: 700;
+        padding-left: 13%; } }
+  .menu__list a:hover {
+    border-bottom: 2px solid #3ec6ff;
+    padding: 2px 0;
+    margin: 10px 0; }
+    @media (max-width: 970px) {
+      .menu__list a:hover {
+        border-bottom: none; } }
