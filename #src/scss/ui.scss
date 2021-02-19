@@ -114,7 +114,7 @@
 	//position: relative;
 	//right: -700px;
 	//top: -320px;
-	//min-width: 0px;
+	min-width: 0px; // когда слайдер находится внутри флекс эллемента или является частью флекс эллемента - иначе салйдер не будет работать
 	//padding: 0 50px;
 	width: 690px;
 	height: 425px;
@@ -123,7 +123,7 @@
 	}
 	// объект слайдера
 	.slider-item {
-		min-width: 0;
+		min-width: 0; // когда слайдер находится внутри флекс эллемента или является частью флекс эллемента - иначе салйдер не будет работать
 		width: 273px;
 		img {
 			border-radius: 3%;
@@ -134,12 +134,22 @@
 	}
 	// ограничивающая оболочка поля слайдера
 	.slick-list {
-		overflow: hidden;
+		overflow: hidden; //убрать кусок слайда лишнего
 		width: 700px;
 	}
 	/* Лента слайдов */
 	.slick-track {
 		display: flex;
+	}
+	/* Стрелка */
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		margin: -30px 0 0 0;
+		z-index: 10;
+		font-size: 0;
+		width: 30px;
+		height: 60px;
 	}
 }
 
@@ -196,3 +206,129 @@
 }
 
 //END СЛАЙДЕР-2 ==========================================================================================
+// СЛАЙДЕР-3 ==========================================================================================
+.slider-3 {
+	display: flex;
+	flex-direction: row;
+	//position: relative;
+	//right: -700px;
+	//top: -320px;
+	min-width: 0px; // когда слайдер находится внутри флекс эллемента или является частью флекс эллемента - иначе салйдер не будет работать
+	//padding: 0 50px;
+	width: 690px;
+	height: 425px;
+	@media (max-width: 1283px) {
+		width: 300px;
+	}
+	// объект слайдера
+	.slider-item {
+		min-width: 0; // когда слайдер находится внутри флекс эллемента или является частью флекс эллемента - иначе салйдер не будет работать
+		width: 273px;
+		img {
+			border-radius: 3%;
+		}
+	}
+	.slick-slider {
+		width: 720px;
+	}
+	// ограничивающая оболочка поля слайдера
+	.slick-list {
+		overflow: hidden; //убрать кусок слайда лишнего
+		width: 700px;
+	}
+	/* Лента слайдов */
+	.slick-track {
+		display: flex;
+	}
+}
+
+// /* Точки (булиты) */
+// .one-sentence .slick-dots {
+// 	//display: flex;
+// 	//align-items: flex-start;
+// 	//justify-content: center;
+// 	//margin-right: 40px;
+// 	position: relative;
+// 	top: 240px;
+// 	left: -550px;
+// }
+.one-sentence .slick-dots li {
+	list-style: none;
+	margin: 0 10px;
+}
+/* Активная точка */
+.one-sentence .slick-dots li.slick-active button {
+	font-size: 0;
+	width: 12px;
+	height: 12px;
+	background-color: transparent;
+	border: solid rgb(115, 208, 252);
+}
+/* Элемент точки */
+.one-sentence .slick-dots li button {
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(201, 200, 200);
+	border-radius: 50%;
+}
+
+//END СЛАЙДЕР-3 ==========================================================================================
+
+.slider-3 {
+	display: flex;
+	flex-direction: row;
+	//position: relative;
+	//right: -700px;
+	//top: -320px;
+	min-width: 0px; // когда слайдер находится внутри флекс эллемента или является частью флекс эллемента - иначе салйдер не будет работать
+	//padding: 0 50px;
+	width: 690px;
+	height: 425px;
+	@media (max-width: 1283px) {
+		width: 300px;
+	}
+}
+// объект слайдера
+.slider-3 .slider-item {
+	min-width: 0; // когда слайдер находится внутри флекс эллемента или является частью флекс эллемента - иначе салйдер не будет работать
+	width: 371px;
+	height: 260px;
+}
+.slider-3 .slick-slider {
+	width: 1333px;
+}
+// ограничивающая оболочка поля слайдера
+.slider-3 .slick-list {
+	overflow: hidden; //убрать кусок слайда лишнего
+	width: 1333px;
+}
+/* Лента слайдов */
+.slider-3 .slick-track {
+	display: flex;
+}
+/* Стрелка */
+.slider-3 .slick-arrow {
+	position: absolute;
+	top: 50%;
+	margin: -30px 0 0 0;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+/* Стрелка влево */
+.slider-3 .slick-arrow.slick-prev {
+	left: 0;
+	background: url("../img/3-slider/sl-arrow_l.svg") 0 0 /100% no-repeat;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+	right: 0;
+	background: url("../img/3-slider/sl-arrow_r.svg") 0 0 /100% no-repeat;
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+	opacity: 0.2;
+}

@@ -34,7 +34,23 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$('.slider-2').slick(
 		{
-			arrows: true,
+
+			slidesToShow: 2,
+			dots: true,
+		}
+	);
+
+
+
+});
+
+//Подключаю третий слайдер slider-2
+$(document).ready(function () {
+	$('.slider-3').slick(
+		{
+
+			slidesToShow: 2,
+
 		}
 	);
 
