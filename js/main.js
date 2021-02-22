@@ -34,9 +34,37 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$('.slider-2').slick(
 		{
-
-			slidesToShow: 2,
+			arrows: false,
 			dots: true,
+			addaptiveHight: true,
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			speed: 1000,
+			easing: 'ease',
+			infinite: true,
+			initialSlide: 1,
+			autoplay: true, // автопрокрутка
+			autoplaySpeed: 3000,
+			pauseOnFocus: true,  // пауза после фокуса
+			pauseOnHover: true,
+			pauseOnDotsHover: false,
+			draggable: false, // движение мышкой слайдов
+			swipe: true,
+			touchThreshold: 3, // насколько тянется салйдер
+			touchMove: true,
+			waitForAnimate: true, // ждать анимацию после нажатия кнопки
+			centerMode: true, //..главный слайд всегда по центру
+			//variableWidth: true, // слайдер позволяет самому контенту определьять ширину коротко - это функци автоматического адоптивного слайдера
+			//rows: 1  // сколько рядов - этажей
+			//slidesPerRow: 1 // количество слайдов в ряду
+			//vertical: true// вертикальный слайдер - он не так хорошо работает, во избежание проблем лучше указывать высоту
+			// verticalSwiping: // включает вертикальную прокрутку
+			//fade: true, // показывается только 1 слайд, они плавно переходят один в другой
+			//asNawFor:"slider-x" связывает несклько слайдов  для x указываем slider-2 а для slider-2 x/
+			// при листании одного слайдера, в другом тоже меняются изображения.
+			// mobile-first:false;
+			//  ленивая загрузка   data-lazy атрибут img вместо src
+			//appendArrows: $('.one-sentence'),// перемещение стрелок и точек в др. див ..
 		}
 	);
 
@@ -49,7 +77,7 @@ $(document).ready(function () {
 	$('.slider-3').slick(
 		{
 
-			slidesToShow: 2,
+			slidesToShow: 4,
 
 		}
 	);
