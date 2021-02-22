@@ -158,7 +158,7 @@
 	position: absolute;
 	top: 1350px;
 	//right: 700px;
-	left: 1230px;
+	left: 800px;
 }
 .one-sentence .slick-dots li {
 	list-style: none;
@@ -235,26 +235,29 @@
 
 //END СЛАЙДЕР-2 ==========================================================================================
 // СЛАЙДЕР-3 ==========================================================================================
+
+.block-slider-3 {
+	display: flex;
+	justify-content: center;
+
+	width: 100%;
+}
 .slider-3 {
 	display: flex;
 	flex-direction: row;
-	//position: relative;
-	//right: -700px;
-	//top: -320px;
-	min-width: 0px; // когда слайдер находится внутри флекс эллемента или является частью флекс эллемента - иначе салйдер не будет работать
-	//padding: 0 50px;
-	width: 690px;
+	align-items: center;
+	position: relative;
+	padding: 0 40px;
+	width: 1260px;
 	height: 425px;
-	@media (max-width: 1283px) {
-		width: 300px;
-	}
+	min-width: 0px; // когда слайдер находится внутри флекс эллемента или является частью флекс эллемента - иначе салйдер не будет работать
+
 	// объект слайдера
 	.slider-item {
 		min-width: 0; // когда слайдер находится внутри флекс эллемента или является частью флекс эллемента - иначе салйдер не будет работать
 		width: 273px;
-		img {
-			border-radius: 3%;
-		}
+		width: 371px;
+		height: 260px;
 	}
 	.slick-slider {
 		width: 720px;
@@ -262,69 +265,37 @@
 	// ограничивающая оболочка поля слайдера
 	.slick-list {
 		overflow: hidden; //убрать кусок слайда лишнего
-		width: 700px;
+		width: 1230px;
 	}
 	/* Лента слайдов */
 	.slick-track {
 		display: flex;
 	}
-}
 
-.slider-3 {
-	display: flex;
-	flex-direction: row;
-	//position: relative;
-	//right: -700px;
-	//top: -320px;
-	min-width: 0px; // когда слайдер находится внутри флекс эллемента или является частью флекс эллемента - иначе салйдер не будет работать
-	//padding: 0 50px;
-	width: 690px;
-	height: 425px;
+	/* Стрелка */
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		margin: -30px 0 0 0;
+		z-index: 10;
+		font-size: 0; // убирает надписи на кнопках
+		width: 30px;
+		height: 60px;
+	}
+	// /* Стрелка влево */
+	.slick-arrow.slick-prev {
+		left: 0px;
+		background: url("../img/3-slider/sl-arrow_l.svg") 0 0 /100% no-repeat;
+	}
+	// /* Стрелка вправо */
+	.slick-arrow.slick-next {
+		right: 0px;
+		background: url("../img/3-slider/sl-arrow_r.svg") 0 0 /100% no-repeat;
+	}
+
+	/* end Стрелка */
 	@media (max-width: 1283px) {
-		width: 300px;
 	}
 }
-// объект слайдера
-.slider-3 .slider-item {
-	min-width: 0; // когда слайдер находится внутри флекс эллемента или является частью флекс эллемента - иначе салйдер не будет работать
-	width: 371px;
-	height: 260px;
-}
-.slider-3 .slick-slider {
-	width: 1333px;
-}
-// ограничивающая оболочка поля слайдера
-.slider-3 .slick-list {
-	overflow: hidden; //убрать кусок слайда лишнего
-	width: 1333px;
-}
-/* Лента слайдов */
-.slider-3 .slick-track {
-	display: flex;
-}
-// /* Стрелка */
-// .slider-3 .slick-arrow {
-// 	position: absolute;
-// 	top: 50%;
-// 	margin: -30px 0 0 0;
-// 	z-index: 10;
-// 	font-size: 0;
-// 	width: 30px;
-// 	height: 60px;
-// }
-// /* Стрелка влево */
-// .slider-3 .slick-arrow.slick-prev {
-// 	left: 0;
-// 	background: url("../img/3-slider/sl-arrow_l.svg") 0 0 /100% no-repeat;
-// }
-// /* Стрелка вправо */
-// .slick-arrow.slick-next {
-// 	right: 0;
-// 	background: url("../img/3-slider/sl-arrow_r.svg") 0 0 /100% no-repeat;
-// }
-// /* Стрелка не активная */
-// .slick-arrow.slick-disabled {
-// 	opacity: 0.2;
-// }
 
 //END СЛАЙДЕР-3 ==========================================================================================

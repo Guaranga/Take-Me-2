@@ -44,7 +44,7 @@ $(document).ready(function () {
 			infinite: true,
 			initialSlide: 1,
 			autoplay: true, // автопрокрутка
-			autoplaySpeed: 3000,
+			autoplaySpeed: 1000,
 			pauseOnFocus: true,  // пауза после фокуса
 			pauseOnHover: true,
 			pauseOnDotsHover: false,
@@ -77,7 +77,7 @@ $(document).ready(function () {
 	$('.slider-3').slick(
 		{
 
-			slidesToShow: 4,
+			slidesToShow: 3,
 
 		}
 	);
