@@ -1,3 +1,4 @@
+@import "peremennie";
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
@@ -125,9 +126,20 @@
 	.slider-item {
 		min-width: 0; // когда слайдер находится внутри флекс эллемента или является частью флекс эллемента - иначе салйдер не будет работать
 		width: 273px;
+		opacity: 0.6; // для свойства centerMode
+		text-align: center; // для свойства centerMode
+		transition: all 0.3s ease 0s;
+		padding: 0 0 0 60px;
 		img {
 			border-radius: 3%;
 		}
+		@media (max-width: 1283px) {
+			opacity: 1;
+			padding: 0;
+		}
+	}
+	.slider-item.slick-center {
+		opacity: 1; // выключаем свойство - для свойства centerMode
 	}
 
 	.slick-slider {
@@ -141,6 +153,7 @@
 	/* Лента слайдов */
 	.slick-track {
 		display: flex;
+		align-items: flex-start; // включоет  addaptive --Hight
 	}
 
 	/* Стрелка */
@@ -174,7 +187,7 @@
 }
 /* Элемент точки */
 .one-sentence .slick-dots li button {
-	font-size: 0;
+	font-size: 0; //убрать цифры 1-2-3-4-5
 	width: 10px;
 	height: 10px;
 	background-color: rgb(201, 200, 200);
@@ -239,6 +252,9 @@
 .block-slider-3 {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	align-self: center;
+	margin: 0 15px;
 
 	width: 100%;
 }
@@ -258,7 +274,13 @@
 		width: 273px;
 		width: 371px;
 		height: 260px;
+		text-align: center; // для свойства centerMode
+		opacity: 0.8; // для свойства centerMode
+		&:hover {
+			opacity: 1;
+		}
 	}
+
 	.slick-slider {
 		width: 720px;
 	}
@@ -282,20 +304,22 @@
 		width: 30px;
 		height: 60px;
 	}
+	.slick-arrow.slick-disabled {
+		opacity: 0.2;
+	}
+
 	// /* Стрелка влево */
 	.slick-arrow.slick-prev {
-		left: 0px;
+		left: -8px;
 		background: url("../img/3-slider/sl-arrow_l.svg") 0 0 /100% no-repeat;
 	}
 	// /* Стрелка вправо */
 	.slick-arrow.slick-next {
-		right: 0px;
+		right: 10px;
 		background: url("../img/3-slider/sl-arrow_r.svg") 0 0 /100% no-repeat;
 	}
 
 	/* end Стрелка */
-	@media (max-width: 1283px) {
-	}
 }
 
 //END СЛАЙДЕР-3 ==========================================================================================
