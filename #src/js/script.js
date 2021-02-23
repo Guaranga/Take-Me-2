@@ -64,6 +64,9 @@ $(document).ready(function () {
 			//  ленивая загрузка   data-lazy атрибут img вместо src
 			//appendArrows: $('.one-sentence'),// перемещение стрелок и точек в др. див ..
 
+
+
+
 			responsive: [ //адабтивность 
 				{
 					breakpoint: 1283,
@@ -80,9 +83,6 @@ $(document).ready(function () {
 				}
 			]
 
-
-
-
 		}
 	);
 
@@ -90,7 +90,11 @@ $(document).ready(function () {
 
 });
 
-//Подключаю третий слайдер slider-3
+
+
+
+
+//Подключаю третий слайдер slider - 3
 $(document).ready(function () {
 	$('.slider-3').slick(
 		{
@@ -99,7 +103,7 @@ $(document).ready(function () {
 			slidesToShow: 3,
 			slidesToScroll: 1,
 			speed: 1000,
-			infinite: false, // дополнительный класс slick desabled 
+			infinite: false,
 			autoplay: true,
 			pauseOnFocus: false,
 			waitForAnimate: false,
@@ -118,6 +122,11 @@ $(document).ready(function () {
 						arrows: false
 					}
 				}
-			]
+			],
 		});
 });
+
+
+
+
+
