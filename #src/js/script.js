@@ -71,6 +71,12 @@ $(document).ready(function () {
 						slidesToShow: 1,
 						centerMode: false,
 					}
+				},
+				{
+					breakpoint: 830,
+					settings: {
+						dots: false,
+					}
 				}
 			]
 
@@ -97,28 +103,21 @@ $(document).ready(function () {
 			autoplay: true,
 			pauseOnFocus: false,
 			waitForAnimate: false,
-			responsive: [ //адабтивность 
+			//адаптивность
+			responsive: [
 				{
 					breakpoint: 1283,
 					settings: {
-						slidesToShow: 2,
+						slidesToShow: 2
 					}
-				}  //, {
-				// 	breakpoint: 830,
-				// 	settings: {
-				// 		slidesToShow: 1,
-				// 		centerMode: false,
-				// 	}
-				// }
-
+				},
+				{
+					breakpoint: 830,
+					settings: {
+						slidesToShow: 1,
+						arrows: false
+					}
+				}
 			]
-
-
-
-
-		}
-	);
-
-
-
+		});
 });

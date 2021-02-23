@@ -306,10 +306,10 @@ h6 {
   .slider-3 .slick-arrow.slick-disabled {
     opacity: 0.2; }
   .slider-3 .slick-arrow.slick-prev {
-    left: -8px;
+    left: 0px;
     background: url("../img/3-slider/sl-arrow_l.svg") 0 0/100% no-repeat; }
   .slider-3 .slick-arrow.slick-next {
-    right: 10px;
+    right: 13px;
     background: url("../img/3-slider/sl-arrow_r.svg") 0 0/100% no-repeat; }
 
 .header {
