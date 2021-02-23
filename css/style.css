@@ -165,7 +165,7 @@ h6 {
       opacity: 0.8;
       transform: scale(1.2); }
 
-.one-sentence {
+.block-slider-2 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -215,7 +215,7 @@ h6 {
   .slider-2 .slick-arrow {
     display: none; }
 
-.one-sentence .slick-dots {
+.block-slider-2 .slick-dots {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -224,12 +224,12 @@ h6 {
   top: 1350px;
   left: 800px; }
 
-.one-sentence .slick-dots li {
+.block-slider-2 .slick-dots li {
   list-style: none;
   margin: 0 10px; }
 
 /* Активная точка */
-.one-sentence .slick-dots li.slick-active button {
+.block-slider-2 .slick-dots li.slick-active button {
   font-size: 0;
   width: 12px;
   height: 12px;
@@ -237,7 +237,7 @@ h6 {
   border: solid #73d0fc; }
 
 /* Элемент точки */
-.one-sentence .slick-dots li button {
+.block-slider-2 .slick-dots li button {
   font-size: 0;
   width: 10px;
   height: 10px;
