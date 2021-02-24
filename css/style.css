@@ -185,6 +185,9 @@ h6 {
   align-items: center;
   justify-content: space-around;
   height: 595px; }
+  @media (max-width: 970px) {
+    .block-slider-2 {
+      flex-direction: column; } }
 
 .title-block {
   display: flex;
@@ -235,6 +238,9 @@ h6 {
   position: absolute;
   top: 1350px;
   left: 800px; }
+  @media (max-width: 970px) {
+    .block-slider-2 .slick-dots {
+      display: none; } }
 
 .block-slider-2 .slick-dots li {
   list-style: none;

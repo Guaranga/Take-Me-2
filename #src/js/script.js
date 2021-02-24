@@ -73,12 +73,15 @@ $(document).ready(function () {
 					settings: {
 						slidesToShow: 1,
 						centerMode: false,
+						centerMode: false,
 					}
 				},
 				{
-					breakpoint: 830,
+					breakpoint: 970,
 					settings: {
 						dots: false,
+						centerMode: false,
+						slidesToShow: 1
 					}
 				}
 			]
@@ -107,12 +110,12 @@ $(document).ready(function () {
 			autoplay: true,
 			pauseOnFocus: false,
 			waitForAnimate: false,
-			//адаптивность
+			variableWidth: false
 			responsive: [
 				{
 					breakpoint: 1283,
 					settings: {
-						slidesToShow: 2
+						slidesToShow: 1,
 					}
 				},
 				{

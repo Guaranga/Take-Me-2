@@ -116,6 +116,9 @@
 	align-items: center;
 	justify-content: space-around;
 	height: 595px;
+	@media (max-width: $md3+px) {
+		flex-direction: column;
+	}
 }
 
 .title-block {
@@ -181,6 +184,10 @@
 // /* Точки (булиты) */
 .block-slider-2 .slick-dots {
 	display: flex;
+	@media (max-width: $md3+px) {
+		display: none;
+	}
+
 	align-items: flex-start;
 	justify-content: center;
 	margin-right: 40px;
