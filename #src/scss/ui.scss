@@ -42,7 +42,24 @@
 		width: auto;
 		text-align: center;
 		color: #ffffff;
-		padding: 48px 0 0 0;
+	}
+}
+
+.block-botton {
+	padding-top: 30px;
+	input {
+		width: 272px;
+		height: 50px;
+		border-radius: 6px;
+		background-color: #3ec6ff;
+		text-align: center;
+		color: #ffffff;
+		font-size: 16px;
+		font-weight: 400;
+		cursor: pointer;
+		&:hover {
+			background-color: #36a7d8;
+		}
 	}
 }
 
@@ -93,7 +110,6 @@
 //END СЛАЙДЕР НА ГЛАВНОЙ=============================================================================
 
 // СЛАЙДЕР-2 ==========================================================================================
-
 .block-slider-2 {
 	display: flex;
 	flex-direction: row;
@@ -105,7 +121,7 @@
 .title-block {
 	display: flex;
 	flex-direction: column;
-	width: 490px;
+	width: 480px;
 }
 
 /* !!Конкретный Слайдер ==== */
@@ -125,11 +141,11 @@
 	// объект слайдера
 	.slider-item {
 		min-width: 0; // когда слайдер находится внутри флекс эллемента или является частью флекс эллемента - иначе салйдер не будет работать
-		width: 273px;
+		//width: 273px;
 		opacity: 0.6; // для свойства centerMode
 		text-align: center; // для свойства centerMode
 		transition: all 0.3s ease 0s;
-		padding: 0 0 0 60px;
+		//padding: 0 0 0 60px;
 		img {
 			border-radius: 3%;
 		}
@@ -192,58 +208,6 @@
 	height: 10px;
 	background-color: rgb(201, 200, 200);
 	border-radius: 50%;
-}
-
-/* Слайдер */
-.slider-2 .slick-slider {
-}
-/* Слайдер запущен */
-.slider-2 .slick-slider.slick-initialized {
-}
-/* Слайдер с точками */
-.slider-2 .slick-slider.slick-dotted {
-}
-/* Ограничивающая оболочка */
-.slider-2 .slick-list {
-}
-
-/* Слайд */
-.slider-2 .slick-slide {
-}
-/* Слайд активный (показывается) */
-.slider-2 .slick-slide.slick-active {
-}
-/* Слайд основной */
-.slider-2 .slick-slide.slick-current {
-}
-/* Слайд по центру */
-.slider-2 .slick-slide.slick-center {
-}
-/* Клонированный слайд */
-.slider-2 .slick-slide.slick-cloned {
-}
-/* Стрелка */
-.slider-2 .slick-arrow {
-}
-/* Стрелка влево */
-.slider-2 .slick-arrow.slick-prev {
-}
-// /* Стрелка вправо */
-// .slider-2 .slick-arrow.slick-next {
-// }
-/* Стрелка не активная */
-.slider-2 .slick-arrow.slick-disabled {
-}
-/* Точки (булиты) */
-.slider-2 .slick-dots {
-}
-.slider-2 .slick-dots li {
-}
-/* Активная точка */
-.slider-2 .slick-dots li.slick-active {
-}
-/* Элемент точки */
-.slider-2 .slick-dots li button {
 }
 
 //END СЛАЙДЕР-2 ==========================================================================================

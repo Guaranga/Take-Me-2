@@ -154,6 +154,9 @@ body {
 			align-items: center;
 			align-self: center;
 		}
+		select {
+			cursor: pointer;
+		}
 
 		input {
 			width: 272px;
@@ -166,6 +169,7 @@ body {
 			font-size: 16px;
 			font-weight: 400;
 			text-align: left;
+			cursor: pointer;
 
 			@media (max-width: $md2 + px) {
 				width: 170px;
@@ -201,6 +205,9 @@ body {
 				color: #ffffff;
 				font-size: 16px;
 				font-weight: 400;
+				&:hover {
+					background-color: #36a7d8;
+				}
 
 				@media (max-width: $md1-2 + px) {
 					width: 70px;
