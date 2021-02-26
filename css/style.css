@@ -108,32 +108,47 @@ h6 {
     ._container {
       padding: 0 10px; } }
 
-.title__main {
-  /* Style for "Find Your" */
-  font-size: 48px;
-  font-weight: 700;
-  color: #868686; }
-
-.title__main-s {
-  width: auto;
-  text-align: center;
-  padding: 0 0 0 0px;
-  color: #ffffff; }
-
-@media (max-width: 479.98px) {
-  .title {
-    font-size: 38px; } }
-
-.title__text {
-  color: #868686;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 48px 0 0 0; }
-
-.title__text-s {
-  width: auto;
-  text-align: center;
-  color: #ffffff; }
+.title {
+  top: 80px; }
+  .title__main {
+    /* Style for "Find Your" */
+    font-size: 48px;
+    font-weight: 700;
+    color: #868686; }
+    @media (max-width: 970px) {
+      .title__main {
+        font-size: 28px;
+        align-items: center;
+        width: 100%; } }
+    @media (max-width: 479.98px) {
+      .title__main {
+        font-size: 20px;
+        font-weight: 700;
+        width: 100%;
+        height: 100%; } }
+  .title__main-s {
+    width: auto;
+    text-align: center;
+    padding: 0 0 0 0px;
+    color: #ffffff; }
+  .title__text {
+    color: #868686;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 48px 0 0 0; }
+    @media (max-width: 970px) {
+      .title__text {
+        padding: 10px 0 0 30px; } }
+  .title__text-s {
+    width: auto;
+    text-align: center;
+    color: #ffffff; }
+  .title__h3 {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #343434;
+    padding: 29px 0 0 0; }
 
 .block-botton {
   padding-top: 30px; }
@@ -149,6 +164,11 @@ h6 {
     cursor: pointer; }
     .block-botton input:hover {
       background-color: #36a7d8; }
+  @media (max-width: 970px) {
+    .block-botton {
+      padding: 20px 0 5px 35%; }
+      .block-botton input {
+        width: 150px; } }
 
 .main-slider {
   display: block; }
@@ -187,7 +207,9 @@ h6 {
   height: 595px; }
   @media (max-width: 970px) {
     .block-slider-2 {
-      flex-direction: column; } }
+      flex-direction: column;
+      position: relative;
+      height: 795px; } }
 
 .title-block {
   display: flex;
@@ -198,6 +220,7 @@ h6 {
 .slider-2 {
   display: flex;
   flex-direction: row;
+  position: relative;
   min-width: 0px;
   width: 690px;
   height: 425px;
@@ -205,7 +228,12 @@ h6 {
   /* Стрелка */ }
   @media (max-width: 1283px) {
     .slider-2 {
-      width: 300px; } }
+      width: 625px;
+      height: 525px; } }
+  @media (max-width: 970) {
+    .slider-2 {
+      width: 100%;
+      height: 525px; } }
   .slider-2 .slider-item {
     min-width: 0;
     opacity: 0.6;
@@ -245,6 +273,9 @@ h6 {
 .block-slider-2 .slick-dots li {
   list-style: none;
   margin: 0 10px; }
+  @media (max-width: 970px) {
+    .block-slider-2 .slick-dots li {
+      display: none; } }
 
 /* Активная точка */
 .block-slider-2 .slick-dots li.slick-active button {
@@ -261,6 +292,23 @@ h6 {
   height: 10px;
   background-color: #c9c8c8;
   border-radius: 50%; }
+
+.place-history {
+  display: flex;
+  justify-content: center; }
+  .place-history__block-photo {
+    margin: 0 0 0 29px;
+    width: 371px;
+    height: auto;
+    overflow: hidden; }
+    .place-history__block-photo .title__text {
+      padding: 26px 0 0 0; }
+  .place-history .slider-item img {
+    width: 371px;
+    height: 260px; }
+  .place-history .title-block {
+    width: 368px;
+    margin: 0 0 0 0; }
 
 .block-slider-3 {
   display: flex;
@@ -551,32 +599,28 @@ h6 {
           margin: 0 0 20px 30px;
           border-radius: 10%; } }
 
-/*
 .slids {
-	//? Весь этот блок отсутствует в более поздней версии
-	display: flex;
-	flex-direction: row;
-	margin-left: -180px;
-	overflow: hidden;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	position: relative;
-	left: 180px;
-}*/
-/*
+  display: flex;
+  flex-direction: row;
+  margin-left: -180px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  left: 180px; }
+
 .main-slider.conteiner.main-slider__content {
-	display: flex;
-	flex-direction: column;
-	justify-content: left;
-	align-items: left;
-	flex-wrap: nowrap;
-	padding: 0 0 0 50px;
-	position: relative;
-	z-index: 5;
-	color: rgb(109, 23, 23);
-}
-*/
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  flex-wrap: nowrap;
+  padding: 0 0 0 50px;
+  position: relative;
+  z-index: 5;
+  color: #6d1717; }
+
 .main-slider__1 {
   align-items: center;
   background-image: url(../img/main-slider/1.jpg);

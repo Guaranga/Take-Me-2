@@ -243,9 +243,7 @@ body {
 	}
 }
 
-/*
 .slids {
-	//? Весь этот блок отсутствует в более поздней версии
 	display: flex;
 	flex-direction: row;
 	margin-left: -180px;
@@ -255,9 +253,10 @@ body {
 	width: 100%;
 	position: relative;
 	left: 180px;
-}*/
+}
+
 //фото слайдер главная
-/*
+
 .main-slider.conteiner.main-slider__content {
 	display: flex;
 	flex-direction: column;
@@ -269,7 +268,6 @@ body {
 	z-index: 5;
 	color: rgb(109, 23, 23);
 }
-*/
 
 .main-slider__1 {
 	align-items: center;

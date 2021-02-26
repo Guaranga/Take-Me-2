@@ -32,38 +32,26 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$('.slider-2').slick(
 		{
-			arrows: false, // стрелки
-			dots: true,   // точки
-			addaptiveHight: true, // слайдер автоматически настраивается по высоте под конкретный слайд
+			arrows: false,
+			dots: true,
+			addaptiveHight: true,
 			slidesToShow: 2,
-			slidesToScroll: 1, //количество слайдеров пролистывающееся за один раз
-			speed: 1000, // скорость с которой слайды будут пролистываться при нажатии на кнопку
-			easing: 'ease', // тип анимации в значении салйда  https://fls.guru/cssanimation.html
-			infinite: true, // будет ли слайдер бесконечным (по кругу)?
-			initialSlide: 1, // с какого фото будет старт слайда
-			autoplay: true, // автопрокрутка
-			autoplaySpeed: 2000, // скорость автопрокрутки
-			pauseOnFocus: true,  // пауза после фокуса - когда мы нажали на слайдер или его двигали по умолчанию  true
-			pauseOnHover: true, // пауза при наведении на всю область слайдера по умолчанию  true
-			pauseOnDotsHover: false, // пауза при наведении на точки по умолчанию  true
-			draggable: false, // движение мышкой слайдов
-			swipe: true, // движение пальцами на телефоне слайдов
-			touchThreshold: 3, // насколько тянется салйдер - сколько нужно просвайпить чтобы сработали другие слайды по умолчанию 5 (слайдер делиться на пять частей)
-			touchMove: true, // отключает возможностьи тачскрина - отключает возможность его тянуть - по умолчанию  true  
-			waitForAnimate: true, // ждать анимацию после нажатия кнопки в этом случае нельзя будет быстро прощелкать кнопками фото 
-			centerMode: true, //..главный слайд всегда по центру + начинает выглядывать кусочек др. слайда  slider - item
-			//variableWidth: true, // слайдер позволяет самому контенту определьять ширину коротко - это функци автоматического адоптивного слайдера - единственное пропадают отступы (возможно эта проблема решаема)
-			//rows: 1  // сколько рядов - этажей у слайда (сколько объектов содержит один слайд)
-			//slidesPerRow: 1 // количество рядов слайдов
-			//vertical: true// вертикальный слайдер - он не так хорошо работает, во избежание проблем лучше указывать высоту
-			// verticalSwiping: // включает вертикальную прокрутку
-			//fade: true, // показывается только 1 слайд, они плавно переходят один в другой можно использовать микс следующего свойсва asNawFor с fade - тогда на экране например будет вверху большое фото, а внизу маленькие нажимая на которые мы будем изменять большое фото
-			//asNawFor:"slider-x" связывает несклько слайдов  для x указываем slider-2 а для slider-2 x/ это свойство удобно при верстке товаров для интернет магазини, когда нужна например большая и маленькая картинки (связанные друг с другом)
-			// при листании одного слайдера, в другом тоже меняются изображения. Должно быть одинаковое количество изображенией в связанных слайдах
-			// mobile-first:false;
-			//  ленивая загрузка   data-lazy атрибут img вместо src
-			//appendArrows: $('.one-sentence'),// перемещение стрелок и точек в др. див ..
-
+			slidesToScroll: 1,
+			speed: 1000,
+			easing: 'ease',
+			infinite: true,
+			initialSlide: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			pauseOnFocus: true,
+			pauseOnHover: true,
+			pauseOnDotsHover: false,
+			draggable: false,
+			swipe: true,
+			touchThreshold: 3,
+			touchMove: true,
+			waitForAnimate: true,
+			centerMode: true,
 
 
 
@@ -73,15 +61,13 @@ $(document).ready(function () {
 					settings: {
 						slidesToShow: 1,
 						centerMode: false,
-						centerMode: false,
+
 					}
 				},
 				{
 					breakpoint: 970,
 					settings: {
-						dots: false,
-						centerMode: false,
-						slidesToShow: 1
+
 					}
 				}
 			]
@@ -99,7 +85,7 @@ $(document).ready(function () {
 
 //Подключаю третий слайдер slider - 3
 $(document).ready(function () {
-	$('.slider-3').slick(
+	$('slider-3').slick(
 		{
 			arrows: true,
 			dots: false,
