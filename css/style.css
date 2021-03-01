@@ -310,6 +310,19 @@ h6 {
     width: 368px;
     margin: 0 0 0 0; }
 
+.raiting {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 40px;
+  font-size: 15px;
+  line-height: 0.75; }
+  .raiting__value {
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0 0 0 10px; }
+
 .block-slider-3 {
   display: flex;
   justify-content: center;

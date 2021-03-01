@@ -353,6 +353,36 @@ $md4: 479.98;
 
 //end STARS CSS ONLY
 
+.raiting {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-top: 40px;
+
+	font-size: 15px;
+	line-height: 0.75;
+	&__body {
+	}
+
+	&__active {
+	}
+
+	&__items {
+	}
+
+	&__value {
+		font-size: 100%;
+		font-weight: 700;
+		line-height: 1;
+		padding: 0 0 0 10px;
+	}
+}
+.rating {
+	&__item {
+	}
+}
+//end STARS
+
 //END БЛОК ИСТОРИИ ==========================================================================================
 // СЛАЙДЕР-3 ==========================================================================================
 
