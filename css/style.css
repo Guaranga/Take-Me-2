@@ -310,18 +310,95 @@ h6 {
     width: 368px;
     margin: 0 0 0 0; }
 
+.simple-rating {
+  position: relative;
+  font-size: 20px;
+  display: inline-block; }
+  .simple-rating::before {
+    display: block;
+    content: "★★★★★"; }
+  .simple-rating__items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden; }
+  .simple-rating__item {
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden; }
+  .simple-rating__item:checked,
+  .simple-rating__item:checked ~ .simple-rating__label {
+    color: #fa9d4c; }
+  .simple-rating__label {
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: #000000; }
+    .simple-rating__label::before {
+      content: "★";
+      display: block;
+      transition: color 0.3s ease 0s; }
+    .simple-rating__label:hover,
+    .simple-rating__label:hover ~ .simple-rating__label,
+    .simple-rating__label:checked ~ .simple-rating__label:hover {
+      color: #fffb00; }
+
 .raiting {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   margin-top: 40px;
-  font-size: 15px;
-  line-height: 0.75; }
+  font-size: 18px;
+  line-height: 0.75;
+  transition: opacity 0.3s ease 0s;
+  cursor: pointer; }
+  .raiting__body {
+    position: relative; }
+    .raiting__body::before {
+      display: block;
+      content: "★★★★★"; }
+  .raiting__active {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    cursor: pointer; }
+    .raiting__active::before {
+      content: "★★★★★";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      color: #fa9d4c; }
+  .raiting__items {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
   .raiting__value {
     font-size: 100%;
     font-weight: 700;
     line-height: 1;
     padding: 0 0 0 10px; }
+
+.rating__item {
+  flex: 0 0 20%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer; }
 
 .block-slider-3 {
   display: flex;
