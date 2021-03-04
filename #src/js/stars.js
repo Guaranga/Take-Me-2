@@ -14,6 +14,7 @@ function initRatings() {
 		initRating(rating);
 	}
 
+
 	// Инициализируем конкретный рейтинг
 	function initRating(rating) {
 		initRatingVars(rating);

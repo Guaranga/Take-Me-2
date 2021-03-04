@@ -6,7 +6,6 @@ $(document).ready(function () {
 	$('body').toggleClass('lock');
 });
 
-
 //кнопка слайдера - замена фона
 $(document).ready(function () {
 	$('#r41').click(function (event) {
@@ -80,47 +79,46 @@ $(document).ready(function () {
 });
 
 
-// слайдер slider-2 END
 
-// Подключаю ЗВЕЗДНЫЙ РЕЙТИНГ
 
-// "use strict"
 
-// const raitings = document.querySelectorAll('.raiting');
-// if (raitings.length > 0) {
-// 	initRaitings();
-// }
+//Подключаю третий слайдер slider - 3
+$(document).ready(function () {
+	$('slider-3').slick(
+		{
+			arrows: true,
+			dots: false,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			speed: 1000,
+			infinite: false,
+			autoplay: true,
+			pauseOnFocus: false,
+			waitForAnimate: false,
+			variableWidth: false
+			responsive: [
+				{
+					breakpoint: 1283,
+					settings: {
+						slidesToShow: 1,
+					}
+				},
+				{
+					breakpoint: 830,
+					settings: {
+						slidesToShow: 1,
+						arrows: false
+					}
+				}
+			],
+		});
+});
 
-// //основная функция
-// function initRaitings() {
-// 	let raitingActive, raitingValue;
-// 	// "Бегаем" по всем рейтингам на странице
-// 	for (let index = 0; index < raitings.length; index++) {
-// 		const raiting = raitings[index];
-// 		initRaiting(raiting);
-// 	}
-// 	//инициализируем конкретный рейтинг
-// 	function initRaiting(raiting) {
-// 		initRatingVars(rating);
 
-// 		setRatingActiveWidth();
 
-// 		if (rating.classList.contains('rating_set')) {
-// 			setRating(rating);
-// 		}
-// 	}
-// 	// инициализация переменных
-// 	function initRaitingVars(rating) {
-// 		raitingActive = document.querySelector('.raiting__active');
-// 		raitingValue = document.querySelector('.raiting__value');
-// 	}
-// 	//Изменяем ширину активных звезд
-// 	function setRaitingActiveWidth(index = ratingValue.innerHTML) {
-// 		const raitingActiveWidth = index / 0.05;
-// 		raitingActive.style.width = `${ratingActiveWidth}%`;
-// 	}
-// }
 
+
+/// stars
 "use strict"
 
 const ratings = document.querySelectorAll('.rating');
@@ -191,40 +189,3 @@ function initRatings() {
 
 
 }
-// -------------------------- ЗВЕЗДНЫЙ РЕЙТИНГ END
-//Подключаю третий слайдер slider - 3
-$(document).ready(function () {
-	$('slider-3').slick(
-		{
-			arrows: true,
-			dots: false,
-			slidesToShow: 3,
-			slidesToScroll: 1,
-			speed: 1000,
-			infinite: false,
-			autoplay: true,
-			pauseOnFocus: false,
-			waitForAnimate: false,
-			variableWidth: false
-			responsive: [
-				{
-					breakpoint: 1283,
-					settings: {
-						slidesToShow: 1,
-					}
-				},
-				{
-					breakpoint: 830,
-					settings: {
-						slidesToShow: 1,
-						arrows: false
-					}
-				}
-			],
-		});
-});
-
-
-
-//третий слайдер slider - 3 end
-
