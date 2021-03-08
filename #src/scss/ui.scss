@@ -300,6 +300,7 @@ $md4: 479.98;
 
 .rating {
 	display: flex;
+	flex-direction: column;
 	align-items: space-between;
 	justify-content: space-between;
 	font-size: 28px;
@@ -394,9 +395,34 @@ $md4: 479.98;
 		height: 260px;
 		text-align: center; // для свойства centerMode
 		opacity: 0.8; // для свойства centerMode
+		margin-left: 25px;
 		&:hover {
 			opacity: 1;
 		}
+	}
+	.form__item {
+		width: 115px;
+		.rating-a {
+			flex-direction: column;
+			position: relative;
+		}
+	}
+
+	.slider-item-1 {
+		background-image: url(../img/3-slider/1.jpg);
+	}
+
+	.slider-item-2 {
+		background-image: url(../img/3-slider/2.jpg);
+	}
+	.slider-item-3 {
+		background-image: url(../img/3-slider/3.jpg);
+	}
+	.slider-item-4 {
+		background-image: url(../img/3-slider/4.jpg);
+	}
+	.slider-item-5 {
+		background-image: url(../img/3-slider/5.jpg);
 	}
 
 	.slick-slider {

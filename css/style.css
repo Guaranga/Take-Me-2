@@ -312,6 +312,7 @@ h6 {
 
 .rating {
   display: flex;
+  flex-direction: column;
   align-items: space-between;
   justify-content: space-between;
   font-size: 28px;
@@ -389,9 +390,25 @@ h6 {
     width: 371px;
     height: 260px;
     text-align: center;
-    opacity: 0.8; }
+    opacity: 0.8;
+    margin-left: 25px; }
     .slider-3 .slider-item:hover {
       opacity: 1; }
+  .slider-3 .form__item {
+    width: 115px; }
+    .slider-3 .form__item .rating-a {
+      flex-direction: column;
+      position: relative; }
+  .slider-3 .slider-item-1 {
+    background-image: url(../img/3-slider/1.jpg); }
+  .slider-3 .slider-item-2 {
+    background-image: url(../img/3-slider/2.jpg); }
+  .slider-3 .slider-item-3 {
+    background-image: url(../img/3-slider/3.jpg); }
+  .slider-3 .slider-item-4 {
+    background-image: url(../img/3-slider/4.jpg); }
+  .slider-3 .slider-item-5 {
+    background-image: url(../img/3-slider/5.jpg); }
   .slider-3 .slick-slider {
     width: 720px; }
   .slider-3 .slick-list {
